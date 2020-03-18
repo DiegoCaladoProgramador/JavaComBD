@@ -1,0 +1,8 @@
+package dao;
+
+public class TelefoneDao {
+	private final String SQL_INSERE_TELEFONE = "INSERT INTO \"PUBLIC\".\"TELEFONE\"(\"DDD\", \"NUMERO\", \"TIPO\", \"ID_USUARIO\", ) VALUES (?, ?, ?, ?);";
+	private final String SQL_ALTERA_TELEFONE = "UPDATE USUARIO SET NOME=?, EMAIL=?, SENHA=?, WHERE ID=?;";
+	private final String SQL_EXCLUI_USUARIO = "DELETE FROM USUARIO WHERE ID=?";
+	private final String SQL_SELECIONA_TELEFONE = "SELECT * FROM USUARIO";
+}

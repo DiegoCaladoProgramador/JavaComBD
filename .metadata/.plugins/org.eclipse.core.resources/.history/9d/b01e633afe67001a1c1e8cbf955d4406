@@ -1,0 +1,29 @@
+package dao;
+
+import java.sql.Connection;
+
+public class UsuarioDao {
+	private final String SQL_INSERE_USUARIO = "INSERT INTO \"PUBLIC\".\"USUARIO\"";
+	
+	
+	
+	
+	private PreparedStatement statemant = null;
+	
+	public boolean inserirUsuario(Usuario usuario) {
+		
+	}
+	
+	public ArrayList<Usuario> listarTodosUsuarios(){
+		
+	}
+	
+	public boolean alterarUsuario(Usuario usuario) {
+		
+	}
+	
+	public boolean excluirUsuario(Usuario usuario) {
+		
+	}
+
+}

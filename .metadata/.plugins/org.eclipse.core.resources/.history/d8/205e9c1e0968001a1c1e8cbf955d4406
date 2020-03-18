@@ -1,0 +1,31 @@
+package view;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import dao.UsuarioDao;
+import jdbc.ConexaoJdbc;
+import model.Usuario;
+
+public class Main {
+
+	public static void main(String[] args) {
+		UsuarioDao usuarioDao = new UsuarioDao();
+		Usuario usuario = new Usuario();
+		
+		usuario.setNome("teste");
+		usuario.setEmail("@teste");
+		usuario.setSenha("***");
+		usuarioDao.inserirUsuario(usuario);
+		
+		usuario.setNome("teste2");
+		usuario.setEmail("@teste2");
+		usuario.setSenha("****");
+		
+		ArrayList<Usuario> listaUsuario = usuarioDao.listarTodosUsuarios();
+		for(Usuario user: listaUsuario) {
+			System.out.println(usuario.toString());
+		}
+	}
+
+}

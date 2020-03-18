@@ -1,0 +1,31 @@
+package Model;
+
+
+public class Telefone {
+	private int ddd;
+	private String número;
+	private String tipo;
+	public Telefone(int ddd, String número, String tipo) {
+		this.ddd = ddd;
+		this.número = número;
+		this.tipo = tipo;
+	}
+	public int getDdd() {
+		return ddd;
+	}
+	public void setDdd(int ddd) {
+		this.ddd = ddd;
+	}
+	public String getNúmero() {
+		return número;
+	}
+	public void setNúmero(String número) {
+		this.número = número;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+}

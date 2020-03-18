@@ -1,0 +1,38 @@
+package dao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+import jdbc.ConexaoJdbc;
+import model.Usuario;
+
+public class UsuarioDao {
+	private final String SQL_INSERE_USUARIO = "INSERT INTO \"PUBLIC\".\"USUARIO\"(\"NOME\", \"EMAIL\" ) VALUES (?, ?);";
+	private final String SQL_ALTERA_USUARIO = "UPDATE USUARIO SET NOME=?, EMAIL=?, WHERE ID=?;";
+	private final String SQL_SELECIONA_USUARIO = "SELECT * FROM USUARIO";
+	
+	
+	private PreparedStatement pst = null;
+	
+	public boolean inserirUsuario(Usuario usuario) {
+		boolean ret = false;
+		Connection cnx = ConexaoJdbc.Conectar();
+		try {
+			statement = cnx.prepareStatement(SQL_INSERE_USUARIO);
+			
+		}
+	}
+	
+	public ArrayList<Usuario> listarTodosUsuarios(){
+		
+	}
+	
+	public boolean alterarUsuario(Usuario usuario) {
+		
+	}
+	
+	public boolean excluirUsuario(Usuario usuario) {
+		
+	}
+
+}

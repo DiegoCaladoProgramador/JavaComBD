@@ -1,0 +1,6 @@
+package dao;
+
+public class UsuarioDao {
+	private final String SQL_INSERE_USUARIO;
+
+}
